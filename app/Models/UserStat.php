@@ -16,7 +16,9 @@ class UserStat extends Model
         "used_attempts",
         "word",
         "completed",
-        "max_correct_letters"
+        "max_correct_letters",
+
+        "user_id"
     ];
 
     

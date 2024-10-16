@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('word');
             $table->boolean('completed')->default(0);
             $table->integer('max_correct_letters');
+            $table->unsignedBigInteger('user_id');
+            
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
